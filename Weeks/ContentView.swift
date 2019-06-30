@@ -14,7 +14,10 @@ struct ContentView : View {
             NavigationView {
                 List {
                     HabitCellView()
+                    HabitCellView()
+                    HabitCellView()
                 }
+                    .listStyle(.grouped)
                     .navigationBarTitle(Text("Habits"))
             }
         }
