@@ -12,13 +12,17 @@ struct ContentView : View {
     var body: some View {
         HStack {
             NavigationView {
-                List {
-                    HabitCellView()
-                    HabitCellView()
-                    HabitCellView()
+                ScrollView {
+                    ForEach (0 ..< 10) { item in
+                        HStack {
+                            HabitCell()
+                                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
+                            HabitCell()
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
+                        }
+                    }
+                        .navigationBarTitle(Text("Habits"))
                 }
-                    .listStyle(.grouped)
-                    .navigationBarTitle(Text("Habits"))
             }
         }
     }
