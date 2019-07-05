@@ -16,10 +16,10 @@ struct ContentView : View {
                     ForEach (0 ..< 10) { item in
                         HStack {
                             HabitCell()
-                                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
+                                .padding(EdgeInsets(top: 0, leading: 17, bottom: 0, trailing: 0))
                                 .frame(minWidth: 0, maxWidth: .infinity)
                             HabitCell()
-                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 17))
                         }
                     }
                         .navigationBarTitle(Text("Habits"))
