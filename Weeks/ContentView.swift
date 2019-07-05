@@ -17,6 +17,7 @@ struct ContentView : View {
                         HStack {
                             HabitCell()
                                 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
+                                .frame(minWidth: 0, maxWidth: .infinity)
                             HabitCell()
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
                         }
