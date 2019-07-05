@@ -11,7 +11,7 @@ import SwiftUI
 struct HabitCell : View {
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: 15)
                 .fill(Color.blue)
             VStack(alignment: .leading) {
                 HStack(alignment: .center, spacing: 2) {
