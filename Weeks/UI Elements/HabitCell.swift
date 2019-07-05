@@ -16,15 +16,16 @@ struct HabitCell : View {
             VStack(alignment: .leading) {
                 HStack(alignment: .center, spacing: 2) {
                     ForEach(0 ..< 5) { item in
-                        RoundedRectangle(cornerRadius: 12)
+                        RoundedRectangle(cornerRadius: 5)
                             .fill(Color.white)
-                            .frame(height: 24)
+                            .frame(height: 10)
                     }
                 }
-                Divider()
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
                 Text("Habit Title")
                     .font(.headline)
                     .color(Color.white)
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: -5, trailing: 0))
                 HStack {
                     Image(systemName: "hourglass")
                         .font(.subheadline)
