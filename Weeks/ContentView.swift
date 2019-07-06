@@ -10,7 +10,22 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World!")
+        HStack {
+            NavigationView {
+                ScrollView {
+                    ForEach (0 ..< 10) { item in
+                        HStack {
+                            HabitCell()
+                                .padding(EdgeInsets(top: 0, leading: 17, bottom: 0, trailing: 0))
+                                .frame(minWidth: 0, maxWidth: .infinity)
+                            HabitCell()
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 17))
+                        }
+                    }
+                        .navigationBarTitle(Text("Habits"))
+                }
+            }
+        }
     }
 }
 
