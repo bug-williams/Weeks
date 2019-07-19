@@ -29,7 +29,7 @@ struct HabitCell : View {
                 HStack {
                     Image(systemName: "hourglass")
                         .font(.subheadline)
-                        .colorInvert()
+                        .foregroundColor(Color.white)
                     Text("2 days")
                         .font(.subheadline)
                         .foregroundColor(Color.white)
